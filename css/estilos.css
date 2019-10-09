@@ -151,11 +151,12 @@ label{
 .btn-header{
     margin-top: 20px;
     padding: 5px;
+    color: #000000
 }
 .btn{
     position: relative;
     padding: .5em 2em;
-    border: 2px solid;
+    border: 2px solid #ffffff;
     border-radius: 3px;
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -165,7 +166,7 @@ label{
     font-weight: 500;
     line-height: 1.7em!important;
     transition: all .2s;
-    color: #ffffff
+    color: #000000;
 }
 .btn:hover{
     background-color: transparent;
@@ -179,6 +180,7 @@ label{
     line-height: 1.7em!important;
     transition: all .2s;
 }
+
 
 a{
     text-decoration: none;
