@@ -1,26 +1,31 @@
-*{
+* {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     width: 100%;
-    height: 100px;;
-    /*background-color: rgba(0, 0, 0, 0.4);*/ /*ARREGLAR ESTO*/
-    position: fixed;/*
+    height: 100px;
+    ;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    /*ARREGLAR ESTO*/
+    position: fixed;
+    /*
     background-size: cover;
     background-position: center;
     overflow: hidden;*/
     z-index: 99;
 }
-.header2{
+
+.header2 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-.container{
+.container {
     width: 80%;
-    height: 100px;;
+    height: 100px;
+    ;
     /*background: red;*/
     margin: auto;
     height: 100%!important;
@@ -29,14 +34,17 @@ header{
     position: relative;
     align-items: center!important;
 }
-.logo{
+
+.logo {
     width: 30%;
-    height: 100px;;
+    height: 100px;
+    ;
     float: left;
     padding: 10px;
     box-sizing: border-box;
 }
-.logo h1{
+
+.logo h1 {
     height: 70px;
     text-align: right;
     box-sizing: border-box;
@@ -50,30 +58,33 @@ header{
     padding: 20px;
     margin: auto;
 }
+
 /*menu*/
-nav{
+
+nav {
     width: 70%;
     height: 70px;
     float: left;
     text-align: right;
     box-sizing: border-box;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     padding: 20px;
     margin: auto;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 1px;
-
 }
-.img-header{
-    
+
+.img-header {
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -85,19 +96,24 @@ nav ul li a{
     align-items: center;
     z-index: 98;
 }
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
-div{
+
+div {
     display: block;
 }
-ul{
+
+ul {
     list-style: none;
 }
-label{
+
+label {
     color: #ffffff;
 }
-.container-header{
+
+.container-header {
     height: 100%!important;
     width: 80%;
     padding-right: 15px;
@@ -105,20 +121,23 @@ label{
     margin-right: auto;
     margin-left: auto;
 }
-.degrade{
+
+.degrade {
     height: 100%!important;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .bienvenido {
     position: absolute;
     padding: 50px;
     width: 50%;
     padding-top: 250px;
 }
-.img-header:after{
+
+.img-header:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -128,7 +147,8 @@ label{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
-.img-header-information:before{
+
+.img-header-information:before {
     width: calc(50% - 112px);
     height: 100%;
     top: 0;
@@ -137,23 +157,28 @@ label{
     content: "";
     position: absolute;
 }
-.bienvenido p i{
+
+.bienvenido p i {
     width: 35px;
 }
-.bienvenido h1{
+
+.bienvenido h1 {
     font-size: 4em;
     color: #ffffff;
     font-weight: 500;
     text-align: left;
     display: inline-block;
 }
+
 /*boton*/
-.btn-header{
+
+.btn-header {
     margin-top: 20px;
     padding: 5px;
     color: #000000
 }
-.btn{
+
+.btn {
     position: relative;
     padding: .5em 2em;
     border: 2px solid #ffffff;
@@ -167,8 +192,11 @@ label{
     line-height: 1.7em!important;
     transition: all .2s;
     color: #000000;
+    border-radius: 3px;
+    display: inline-block;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: transparent;
     border: 2px solid;
     color: #ffffff;
@@ -179,10 +207,216 @@ label{
     font-weight: 500;
     line-height: 1.7em!important;
     transition: all .2s;
+    border-radius: 3px;
+    display: inline-block;
 }
 
 
-a{
+.btn:after{
+    transition: all 300ms ease 0ms;
+}
+a {
     text-decoration: none;
+}
+
+/*section de informacion home*/
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+}
+
+.section-imagen {
+    box-sizing: border-box;
+    width: 66%;
+    background-color: yellow;
+    display: flex;
+}
+
+.section-imagen img {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
     
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-informacion {
+    width: 34%;
+    float: left;
+    box-sizing: border-box;
+  
+    background-color: #6b6b6b;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    order: 1;
+    margin-right: 0!important;
+
+}
+
+.section-informacion h2 {
+    padding-bottom: 10px;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 23px;
+
+    color: #ffffff;
+
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.section-informacion p {
+    color: #ffffff;
+    letter-spacing: 1px;
+
+    line-height: 1.7em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn-section a{
+    position: relative;
+    padding: .3em 1em;
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em!important;
+    color: #f2f2f2;
+    display: inline-block;
+}
+/*Section de informacion despues de las cards*/
+.section-inf{
+    text-align: center;
+    margin-bottom: 2.75%;
+}
+.section-info{
+    width: 60%;
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 27px;
+    padding-right: 0px;
+    padding-bottom: 0;
+    padding-left: 0px;
+}
+.section-info h1{
+    margin-bottom: 2.75%;
+    font-size: 4em;
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.section-info p{
+    
+    margin: auto;
+    padding: 0;
+    font-size: 23px;
+    vertical-align: baseline;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+}
+.section-info2{
+    margin-bottom: 2.75%;
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    background-color: #333333;
+    
+}
+.container-footer{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.logo-redes{
+    max-width: 400px;
+}
+
+.soporte{
+    max-width: 400px;
+}
+
+.listas-footer{
+    max-width: 400px;
+}
+.ciudades{
+    max-width: 400px;
+}
+.copy{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-size: 13px;
+    margin-top: 30px;
+}
+.list-footer{
+    padding: 4px 0;
+    margin: auto;
+    line-height: 20px;
+    padding-left: 10px;
+}
+.a-footer{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.h2-footer{
+    padding: 20px;
+    padding-left: 10px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+.icon-social{
+    color: white;
+    margin: auto;
+    font-size: 20px;
+    padding: 4px 0;
+    padding-left: 10px;
+}
+.container-footer-all{
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+
 }
