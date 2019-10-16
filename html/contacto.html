@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactanos | ASJ Catering</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/e8a67cfe62.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../js/scroll.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">ASJ Catering</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="#">Catering</a>
+            <a href="#">Reserva</a>
+            <a href="../html/contacto.html">Contactanos</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+    <div class="img-header-information" style="background-image: url(../img/bg-2.jpg)">
+        <div class=" container-header">
+            <div class="degrade">
+                <div class="bienvnido bienvenido-information">
+                    <h1>Contactanos</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-information">
+
+        <div class="container-info">
+            <div class="formulario-information">
+                <div class="div-titulo">
+                    <h2>Ponte en contacto</h2>
+                </div>
+
+                <form action="">
+                    <div class="div-info">
+                        <input type="text" id="nombre" pattern="[A-Za-z].{5,}" class="form-control"
+                            placeholder="Nombre Completo" required="">
+                    </div>
+                    <div class="div-info">
+                        <input type="email" id="correo" class="form-control" placeholder="Correo" required="">
+                    </div>
+
+                    <div class="div-info">
+                        <input type="tel" id="telefono" class="form-control" placeholder="Numero de Telefono">
+                    </div>
+
+                    <div class="div-info">
+                        <input type="number" id="cpostal" class="form-control" placeholder="Codigo Postal" required="">
+                    </div>
+
+                    <div class="div-info">
+                        <!--cols="30" rows="30"-->
+                        <textarea name="adtional" class="form-control" id="Message" cols="30" rows="10"
+                            placeholder="Informacion Adicional"></textarea>
+                    </div>
+
+                    <div class="div-info">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="mapa-information">
+
+                <div class="div-titulo">
+                    <h2 class="title-info-pregunta" id="preguntas">Encuentranos</h2>
+
+                </div>
+                <div>
+                    <div class="information-div">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121835.93283380047!2d-66.23391639418057!3d-17.393883068703936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373e0d9e4ab27%3A0xa2719ae9532c3e65!2sCochabamba!5e0!3m2!1ses-419!2sbo!4v1570431787419!5m2!1ses-419!2sbo"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-footer">
+                <div class="logo-redes">
+                    <h2 class="h2-footer">Redes Sociales</h2>
+                    <i class="fab fa-facebook icon-social"></i>
+                    <i class="fab fa-twitter icon-social"></i>
+                    <i class="fab fa-instagram icon-social"></i>
+                    <i class="fab fa-youtube icon-social"></i>
+                    <div class="hora">
+                        <script src="../js/fecha.js"></script>
+                    </div>
+                </div>
+                <div class="soporte">
+                    <h2 class="h2-footer">Soporte</h2>
+                    <ul>
+                        <li class="list-footer"><a class="a-footer" href="html/contacto.html#preguntas">Preguntas
+                                Frecuentes</a>
+                        </li>
+                        <li class="list-footer"><a class="a-footer" href="html/contacto.html">Contactanos</a></li>
+                        <li class="list-footer"><a class="a-footer" href="">Terminos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="listas-footer">
+                    <h2 class="h2-footer">ASJ Catering</h2>
+                    <ul>
+                        <li class="list-footer"><a class="a-footer" href="../index.html">Inicio</a></li>
+                        <li class="list-footer"><a class="a-footer" href="">Catering</a></li>
+                        <li class="list-footer"><a class="a-footer" href="">Reserva</a></li>
+                        <li class="list-footer"><a class="a-footer" href="../html/contacto.html">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright © 2019 | ASJ Catering</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

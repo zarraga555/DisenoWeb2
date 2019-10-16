@@ -74,6 +74,24 @@
     align-items: center;
     z-index: 98;
 }
+/*CONTACTO*/
+.img-header-information {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    height: 289px;
+    width: 100%;
+}
+.img-header-information:before {
+    width: calc(100%);
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+}
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -126,16 +144,6 @@ label {
     z-index: -1;
 }
 
-.img-header-information:before {
-    width: calc(50% - 112px);
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    position: absolute;
-}
-
 .bienvenido p i {
     width: 35px;
 }
@@ -146,6 +154,109 @@ label {
     font-weight: 500;
     text-align: left;
     display: inline-block;
+}
+.bienvenido-information h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 70px;
+}
+.container-header {
+    height: 100%!important;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+}
+.degrade {
+    height: 100%!important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.bienvenido-information {
+    position: absolute;
+    padding: 50px;
+    width: 50%;
+    padding-top: 150px;
+}
+.container-information {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.container-info {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mapa-information {
+    width: 600px;
+    margin-left: 50.5px;
+}
+/*FORMULARIO DE CONTACTO*/
+.div-info {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.formulario-information {
+    width: 600px;
+}
+.div-titulo h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+.form-control {
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    border-radius: 0;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    font-size: 15px;
+    line-height: 1;
+    background-color: transparent;
+    color: rgba(51, 51, 51, 0.60);
+    display: block;
+    width: 100%;
+    background-image: none;
+    background-clip: padding-box;
+}
+iframe{
+    width: 100%;
+}
+input[type="submit"]{
+    position: relative;
+    padding: .5em 2em;
+    border: 2px solid #6b6b6b;
+    border-radius: 3px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.7em!important;
+    transition: all .2s;
+    color: #000000;
+    border-radius: 3px;
+    display: inline-block;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
 }
 
 /*boton*/
@@ -280,7 +391,21 @@ a {
     color: #f2f2f2;
     display: inline-block;
 }
-
+.btnsectiondos{
+    position: relative;
+    padding: .3em 1em;
+    border: 2px solid #6b6b6b;
+    border-radius: 3px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em!important;
+    color: #000000;
+    display: inline-block;
+}
 /*Section de informacion despues de las cards*/
 
 .section-inf {
@@ -487,6 +612,24 @@ footer {
       #chk:checked ~ .menu{
         right: 0;
       }
+      .section-info {
+        width: 90%;
+        max-width: 1080px;
+        margin: auto;
+        padding-top: 27px;
+        padding-right: 0px;
+        padding-bottom: 0;
+        padding-left: 0px;
+    }
+      .section-info h1{
+        font-size: 34px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 30px 0;
+    }
+    .section-info p{
+        font-size: 19px;
+    }
     .container-footer, .container-info {
         flex-wrap: wrap;
     }
@@ -526,5 +669,22 @@ footer {
         width: 100%!important;
         display: block;
         position: relative;
+    }
+    /*CONTACTO */
+    .bienvenido-information h1 {
+        color: #fff;
+        font-size: 45px;
+        line-height: 1;
+        margin-bottom: 70px;
+    }
+    iframe{
+        width: 100%;
+    }
+    .mapa-information {
+        width: 600px;
+        margin: 0;
+    }
+    .information-div{
+        width: auto;
     }
 }
