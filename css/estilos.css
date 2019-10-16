@@ -4,86 +4,64 @@
     padding: 0;
 }
 
-header {
+.header {
     width: 100%;
     height: 100px;
-    ;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-    /*ARREGLAR ESTO*/
+    height: 100px;
+    padding: 0 20px;
+    color: #fff;
     position: fixed;
-    /*
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;*/
     z-index: 99;
+    transition: 0.5s;
 }
 
 .header2 {
     background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
 }
-
-.container {
-    width: 80%;
-    height: 100px;
-    ;
-    /*background: red;*/
-    margin: auto;
-    height: 100%!important;
-    flex-wrap: wrap;
-    display: flex;
-    position: relative;
-    align-items: center!important;
-}
-
-.logo {
-    width: 30%;
-    height: 100px;
-    ;
+.logo{
+    line-height: 100px;
     float: left;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.logo h1 {
-    height: 70px;
-    text-align: right;
-    box-sizing: border-box;
-    color: #ffffff;
+    text-transform: uppercase;
+    width: auto;
+  }
+  
+  .menu{
+    float: right;
+    line-height: 100px;
+  }
+  .menu a{
+    color: #fff;
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 20px;
-    margin: auto;
-}
+    padding: 0 10px;
+    transition: 0.4s;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #3498db;
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
 
-/*menu*/
-
-nav {
-    width: 70%;
-    height: 70px;
-    float: left;
-    text-align: right;
-    box-sizing: border-box;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-    margin: auto;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
+/*IMAGEN HEADER*/
 .img-header {
     position: relative;
     background-attachment: fixed;
@@ -211,10 +189,10 @@ label {
     display: inline-block;
 }
 
-
-.btn:after{
+.btn:after {
     transition: all 300ms ease 0ms;
 }
+
 a {
     text-decoration: none;
 }
@@ -241,7 +219,6 @@ a {
     width: 100%;
     float: left;
     box-sizing: border-box;
-    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -252,21 +229,17 @@ a {
     width: 34%;
     float: left;
     box-sizing: border-box;
-  
     background-color: #6b6b6b;
     padding-top: 10%;
     padding-right: 5%;
     padding-bottom: 10%;
     padding-left: 5%;
     position: relative;
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     order: 1;
     margin-right: 0!important;
-
 }
 
 .section-informacion h2 {
@@ -274,9 +247,7 @@ a {
     font-weight: 500;
     line-height: 1em;
     font-size: 23px;
-
     color: #ffffff;
-
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -286,7 +257,6 @@ a {
 .section-informacion p {
     color: #ffffff;
     letter-spacing: 1px;
-
     line-height: 1.7em;
     display: block;
     margin-block-start: 1em;
@@ -294,7 +264,8 @@ a {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.btn-section a{
+
+.btn-section a {
     position: relative;
     padding: .3em 1em;
     border: 2px solid;
@@ -309,12 +280,15 @@ a {
     color: #f2f2f2;
     display: inline-block;
 }
+
 /*Section de informacion despues de las cards*/
-.section-inf{
+
+.section-inf {
     text-align: center;
     margin-bottom: 2.75%;
 }
-.section-info{
+
+.section-info {
     width: 60%;
     max-width: 1080px;
     margin: auto;
@@ -323,7 +297,8 @@ a {
     padding-bottom: 0;
     padding-left: 0px;
 }
-.section-info h1{
+
+.section-info h1 {
     margin-bottom: 2.75%;
     font-size: 4em;
     color: #000000;
@@ -332,8 +307,8 @@ a {
     display: inline-block;
     position: relative;
 }
-.section-info p{
-    
+
+.section-info p {
     margin: auto;
     padding: 0;
     font-size: 23px;
@@ -341,39 +316,43 @@ a {
     line-height: 1.7em;
     letter-spacing: 1px;
 }
-.section-info2{
+
+.section-info2 {
     margin-bottom: 2.75%;
 }
+
 /*FOOTER*/
-footer{
+
+footer {
     width: 100%;
     background-color: #333333;
-    
 }
-.container-footer{
+
+.container-footer {
     width: 80%;
     height: auto;
     margin: auto;
-    
     display: flex;
-    justify-content: space-between; 
-    
+    justify-content: space-between;
 }
-.logo-redes{
+
+.logo-redes {
     max-width: 400px;
 }
 
-.soporte{
+.soporte {
     max-width: 400px;
 }
 
-.listas-footer{
+.listas-footer {
     max-width: 400px;
 }
-.ciudades{
+
+.ciudades {
     max-width: 400px;
 }
-.copy{
+
+.copy {
     width: 80%;
     margin: auto;
     text-align: left;
@@ -383,20 +362,23 @@ footer{
     font-size: 13px;
     margin-top: 30px;
 }
-.list-footer{
+
+.list-footer {
     padding: 4px 0;
     margin: auto;
     line-height: 20px;
     padding-left: 10px;
 }
-.a-footer{
+
+.a-footer {
     color: white;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 1px;
 }
-.h2-footer{
+
+.h2-footer {
     padding: 20px;
     padding-left: 10px;
     margin: auto;
@@ -405,18 +387,144 @@ footer{
     margin: 0 0 20px;
     font-weight: 400;
 }
-.icon-social{
+
+.icon-social {
     color: white;
     margin: auto;
     font-size: 20px;
     padding: 4px 0;
     padding-left: 10px;
 }
-.container-footer-all{
 
+.container-footer-all {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 40px;
+}
+/*Secion de contactanos*/
+.section-info-sop {
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    width: 100%;
+    padding: 6rem 0;
+    z-index: 98;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-info-sop h2 {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    position: relative;
+}
+.section-info-sop h4 {
+    margin-bottom: 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 1.1rem;
+}
+.section-info-sop:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
 
+/*fecha*/
+.hora {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .show-menu-btn,.hide-menu-btn{
+        display: block;
+      }
+      .logo{
+          width: auto;
+      }
+      .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+      }
+      .menu a{
+        display: block;
+        padding: 20px;
+      }
+      .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+      #chk:checked ~ .menu{
+        right: 0;
+      }
+    .container-footer, .container-info {
+        flex-wrap: wrap;
+    }
+    .logo-redes {
+        width: 100%;
+    }
+    .soporte, .listas-footer, .ciudades {
+        margin-top: 40px;
+    }
+    .h2-footer {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .bienvenido {
+        position: absolute;
+        padding: 5px;
+        padding-top: 220px;
+        width: 60%;
+        margin-left: 20px;
+    }
+    .bienvenido h1 {
+        font-size: 2em;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    .section {
+        width: 100%!important;
+        display: block;
+    }
+    .section-imagen {
+        width: 100%!important;
+        display: block;
+        position: relative;
+    }
+    .section-informacion {
+        width: 100%!important;
+        display: block;
+        position: relative;
+    }
 }
