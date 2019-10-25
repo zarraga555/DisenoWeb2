@@ -1,0 +1,221 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+a:hover {
+    color: #c62ae5;
+    text-decoration: none;
+}
+
+h1 a,
+h2 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+
+/*************************
+      texto de encabezado del submenu
+*************************/
+
+p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+
+/*************************
+      Margin bottom
+*************************/
+
+.mb-30 {
+    margin-bottom: 30px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+.mb-60 {
+    margin-bottom: 60px
+}
+
+
+/***************************
+    Page section padding 
+****************************/
+
+.ptb-100 {
+    padding: 100px 0
+}
+
+
+/*-----------------
+	Background css here para todo el submenu
+----------------------*/
+
+.white-bg {
+    background: #fff;
+}
+
+.grey-bg {
+    background: #f1f1f1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,700|Raleway:300,400,400i,500,600,600i,700');
+img {
+    max-width: 100%
+}
+
+
+/*----------------------
+	2. Food menu deyayuno,etc Css here
+----------------------*/
+
+.foode-item-box ul li {
+    display: inline-block;
+}
+
+.foode-item-box ul li a:hover {
+    background: inherit;
+}
+
+.foode-item-box {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    height: 140px;
+    position: relative;
+    text-align: center;
+}
+
+.foode-item-box:before {
+    background: url(images/food/bg-1.png)no-repeat scroll left center;
+    left: 0;
+}
+
+.foode-item-box:before,
+.foode-item-box:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    pointer-events: none;
+}
+
+.foode-item-box:after {
+    background: url(img/est1.png)no-repeat scroll right center;
+    right: 0;
+}
+
+.foode-item_nav {
+    justify-content: center;
+}
+
+.foode-item-box ul li {
+    display: inline-block;
+}
+
+.foode-item-box ul li a {
+    color: #535353;
+    display: block;
+    font-weight: 600;
+    padding: 59px 15px;
+    text-transform: uppercase;
+}
+
+.foode-item-box ul li a.active {
+    color: #e54c2a;
+}
+
+.foode-item-box ul li.active a:focus {
+    background: none
+}
+
+.food-img {
+    float: left;
+    margin: 12px 0;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+}
+
+.food-img img:hover {
+    transform: scale(1.9);
+    /*permite crecer la imagen en una escala de 1 a 9 que es el maximo */
+    transition: all 1s;
+}
+
+.single-food-item-desc {
+    border-left: 1px solid #f1f1f1;
+    float: left;
+    padding: 23px 50px 23px 20px;
+    position: relative;
+    width: 80%;
+}
+
+.single-food-price {
+    position: absolute;
+    right: 50px;
+    top: 40%;
+}
+
+.fooder-menu-description.float_left .single-food-item {
+    padding-right: 70px;
+}
+
+.single-food-inner {
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+
+.fooder-menu-description.float_right .single-food-item {
+    padding-left: 70px;
+}
+
+.single-food-item-title h2 {
+    color: #535353;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.single-food-item-title p {
+    color: #535353;
+    margin: 0;
+}
+
+.single-food-price>p {
+    color: #e54c2a;
+    font-size: 24px;
+    font-weight: 600;
+}

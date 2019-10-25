@@ -150,10 +150,19 @@ label {
 
 .bienvenido h1 {
     font-size: 4em;
-    color: #ffffff;
+    color: #fcf5f5;
     font-weight: 500;
+    font-family: Blackadder ITC;
     text-align: left;
     display: inline-block;
+}
+.bienvenido h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: left;
+    color: honeydew;
+    text-align: center;
 }
 .bienvenido-information h1 {
     color: #fff;
@@ -272,7 +281,7 @@ input[type="submit"]:hover{
     padding: .5em 2em;
     border: 2px solid #ffffff;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -280,15 +289,15 @@ input[type="submit"]:hover{
     font-weight: 500;
     line-height: 1.7em!important;
     transition: all .2s;
-    color: #000000;
+    color: #ffffff;
     border-radius: 3px;
     display: inline-block;
 }
 
 .btn:hover {
-    background-color: transparent;
+    background-color:#ffffff;
     border: 2px solid;
-    color: #ffffff;
+    color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -374,6 +383,7 @@ a {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-align: justify;
 }
 
 .btn-section a {
@@ -480,12 +490,13 @@ footer {
 .copy {
     width: 80%;
     margin: auto;
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
     color: white;
     display: block;
     font-size: 13px;
-    margin-top: 30px;
+   margin-top: 10px;
+
 }
 
 .list-footer {
@@ -509,7 +520,7 @@ footer {
     margin: auto;
     font-size: 20px;
     color: white;
-    margin: 0 0 20px;
+    /*margin: 0 0 20px;*/
     font-weight: 400;
 }
 
@@ -525,7 +536,7 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 40px;
+    
 }
 /*Secion de contactanos*/
 .section-info-sop {
@@ -542,6 +553,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 .section-info-sop h2 {
     padding-bottom: 1rem;
@@ -569,19 +581,52 @@ footer {
 }
 
 /*fecha*/
-.hora {
+.hora 
+{
     color: white;
-    padding: 10px;
+    text-align: center;
     font-size: 18px;
+
 }
 
+/*imagene*/
+figure
+{
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-bottom: 14px;
+    }
+  
+    .containerimg 
+    {
+        margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+     
+    }
+    .containerimg img {
+      width: 100%;
+
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      padding-left: 30px;
+    }
+    .containerimg img:hover
+    {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+    }
 
 
 
 
 
-
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px) 
+{
     .show-menu-btn,.hide-menu-btn{
         display: block;
       }
@@ -652,7 +697,9 @@ footer {
     }
     .bienvenido h1 {
         font-size: 2em;
+       
     }
+    
     .btn {
         margin-top: 20px;
     }
@@ -687,4 +734,9 @@ footer {
     .information-div{
         width: auto;
     }
+    .containerimg 
+    {
+        grid-template-columns: 1fr  ;
+    }
 }
+
